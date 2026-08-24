@@ -38,7 +38,11 @@ export function Navbar() {
         <div className="hidden items-center gap-4 md:flex">
           <LanguageSwitch language={language} onChange={setLanguage} />
           <a
-            href={SITE_CONFIG.links.resumePdf}
+            href={
+              language === "en"
+                ? SITE_CONFIG.links.resumePdfEn
+                : SITE_CONFIG.links.resumePdf
+            }
             className="rounded-md bg-ink px-4 py-2 text-sm font-medium text-surface transition-colors hover:bg-accent"
             download
           >
@@ -119,7 +123,13 @@ function MobileMenu({ language, onLanguageChange, onNavigate }) {
 
 function MenuIcon({ isOpen }) {
   return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+    >
       {isOpen ? (
         <path
           d="M5 5l10 10M15 5L5 15"

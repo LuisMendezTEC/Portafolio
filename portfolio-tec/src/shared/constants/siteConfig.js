@@ -23,6 +23,7 @@ export const SITE_CONFIG = Object.freeze({
       "https://www.linkedin.com/in/luis-andr%C3%A9s-m%C3%A9ndez-689248265/",
     email: "cluisandres486@gmail.com",
     resumePdf: "/cv-luis-mendez.pdf",
+    resumePdfEn: "/CV_LuisMendez_EN.pdf",
   },
 
   // Se usa en <title> / meta description por idioma (ver features/i18n)
