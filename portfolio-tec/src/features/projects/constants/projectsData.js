@@ -98,4 +98,17 @@ export const PROJECTS_DATA = Object.freeze([
     },
     repoUrl: "https://github.com/LuisMendezTEC/deep-learning-backend",
   },
+  {
+    id: "atlas-flow",
+    name: "Atlas Flow",
+    description: {
+      es: "SaaS para administración de múltiples gimnasios.",
+      en: "Multi-gym SaaS administration platform.",
+    },
+    stack: {
+      es: ["JavaScript/TypeScript, CSS y React"],
+      en: ["JavaScript/TypeScript, CSS and React"],
+    },
+    repoUrl: "https://github.com/daniel-rojas28/atlas-flow.git",
+  },
 ]);

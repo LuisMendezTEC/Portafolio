@@ -47,7 +47,7 @@ export function Projects() {
               <div className="mt-4 flex flex-wrap gap-2">
                 {getProjectStack(project.stack).map((tech) => (
                   <span key={tech} className="font-mono text-xs text-ink-soft">
-                    #{tech}
+                    {tech}
                   </span>
                 ))}
               </div>
