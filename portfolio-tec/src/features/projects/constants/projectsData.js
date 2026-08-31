@@ -2,6 +2,19 @@
  * Repositorios destacados. "description" es bilingüe por la misma razón
  * que en skillsData.js. Actualizar acá cuando agregues o cambies un proyecto.
  */
+export const PROJECT_LINK_LABELS = Object.freeze({
+  es: {
+    github: "Ver repositorio",
+    roblox: "Ver juego",
+    website: "Visitar sitio web",
+  },
+  en: {
+    github: "View repository",
+    roblox: "View game",
+    website: "Visit website",
+  },
+});
+
 export const PROJECTS_DATA = Object.freeze([
   {
     id: "dynamic-db-diagrams",
@@ -14,6 +27,7 @@ export const PROJECTS_DATA = Object.freeze([
       es: ["Python (FastaApi framework), JavaScript, CSS (React framework)"],
       en: ["Python (FastaApi framework), JavaScript, CSS (React framework)"],
     },
+    urlType: "github",
     repoUrl: "https://github.com/rooseveltalej/DynamicDBDiagrams",
   },
   {
@@ -27,6 +41,7 @@ export const PROJECTS_DATA = Object.freeze([
       es: ["Tecnologías por definir"],
       en: ["Technologies to be defined"],
     },
+    urlType: "github",
     repoUrl: "https://github.com/SMatey/Niddo",
   },
   {
@@ -44,6 +59,7 @@ export const PROJECTS_DATA = Object.freeze([
         "Python (FastApi framework), TypeScript, JavaScript, (React framework)",
       ],
     },
+    urlType: "github",
     repoUrl: "https://github.com/rooseveltalej/digital_wallet",
   },
   {
@@ -57,6 +73,7 @@ export const PROJECTS_DATA = Object.freeze([
       es: ["Go, JavaScript, CSS, Docker y Redis"],
       en: ["Go, JavaScript, CSS, Docker and Redis"],
     },
+    urlType: "github",
     repoUrl: "https://github.com/LuisMendezTEC/machine-learning-mediaplatform",
   },
   {
@@ -70,6 +87,7 @@ export const PROJECTS_DATA = Object.freeze([
       es: ["Python (FastApi) y Postgresql"],
       en: ["Python (FastApi) and Postgresql"],
     },
+    urlType: "github",
     repoUrl: "https://github.com/LuisMendezTEC/PetHealthTracker-backend",
   },
   {
@@ -83,6 +101,7 @@ export const PROJECTS_DATA = Object.freeze([
       es: ["TypeScript, CSS y React Framework"],
       en: ["TypeScript, CSS and React Framework"],
     },
+    urlType: "github",
     repoUrl: "https://github.com/LuisMendezTEC/PetHealthTracker-mobile",
   },
   {
@@ -96,6 +115,7 @@ export const PROJECTS_DATA = Object.freeze([
       es: ["FastApi y TensorFlow"],
       en: ["FastApi and TensorFlow"],
     },
+    urlType: "github",
     repoUrl: "https://github.com/LuisMendezTEC/deep-learning-backend",
   },
   {
@@ -109,6 +129,23 @@ export const PROJECTS_DATA = Object.freeze([
       es: ["JavaScript/TypeScript, CSS y React"],
       en: ["JavaScript/TypeScript, CSS and React"],
     },
+    urlType: "github",
     repoUrl: "https://github.com/daniel-rojas28/atlas-flow.git",
+  },
+
+  {
+    id: "roblox-train-horror",
+    name: "Roblox Train Horror",
+    description: {
+      es: "Juego de terror en Roblox.",
+      en: "Horror game on Roblox.",
+    },
+    stack: {
+      es: ["Lua, Roblox Studio"],
+      en: ["Lua, Roblox Studio"],
+    },
+    urlType: "roblox",
+    repoUrl:
+      "https://www.roblox.com/es/games/110233104467206/Proyect-Train-Horror",
   },
 ]);

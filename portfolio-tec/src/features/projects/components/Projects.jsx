@@ -1,18 +1,12 @@
 import { useTranslation } from "../../i18n";
 import { Container } from "../../../shared/components/ui/Container";
-import { PROJECTS_DATA } from "../constants/projectsData";
 import { SITE_CONFIG } from "../../../shared/constants/siteConfig";
+import { useProjects } from "../hooks/useProjects";
 
 export function Projects() {
-  const { t, language } = useTranslation();
-
-  const getProjectStack = (stack) => {
-    if (Array.isArray(stack)) {
-      return stack;
-    }
-
-    return stack?.[language] ?? [];
-  };
+  const { t } = useTranslation();
+  const { projects, language, getProjectStack, getProjectLinkLabel } =
+    useProjects();
 
   return (
     <section id="projects" className="scroll-mt-header py-20">
@@ -33,7 +27,7 @@ export function Projects() {
         </div>
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {PROJECTS_DATA.map((project) => (
+          {projects.map((project) => (
             <article
               key={project.id}
               className="rounded-md border border-line p-6"
@@ -55,7 +49,7 @@ export function Projects() {
                 href={project.repoUrl}
                 className="mt-4 inline-block font-mono text-sm text-accent hover:text-accent-ink"
               >
-                {t("projects.viewRepo")} →
+                {getProjectLinkLabel(project)} →
               </a>
             </article>
           ))}
