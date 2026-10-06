@@ -1,7 +1,7 @@
 import { useTranslation } from "../../i18n";
 import { Container } from "../../../shared/components/ui/Container";
 
-// Sección "stub": sigue el mismo patrón que Navbar (texto vía t()).
+// Sección "about": sigue el mismo patrón que Navbar (texto vía t()).
 // Próximo paso: reemplazar el párrafo único por el contenido final
 // y, si crece, mover el texto largo a about/constants/aboutContent.js.
 export function About() {
